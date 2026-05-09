@@ -1,0 +1,6 @@
+user:
+  enabled: true
+item:
+  enabled: true
+interaction:
+  enabled: true

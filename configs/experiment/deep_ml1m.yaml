@@ -1,0 +1,15 @@
+experiment_name: deep_ml1m
+config_refs:
+  data: configs/data/movielens1m.yaml
+  model: configs/model/deep.yaml
+  trainer: configs/trainer/lightning.yaml
+split:
+  split_type: leave_one_out
+  seed: 2026
+negative_sampling:
+  train_num_neg: 4
+  test_num_neg: 20
+features:
+  user: true
+  item: true
+  interaction: true
